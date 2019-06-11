@@ -1,0 +1,53 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+<!-- badges: start -->
+[![Travis build status](https://travis-ci.org/news-r/greatfire.svg?branch=master)](https://travis-ci.org/news-r/greatfire)
+[![AppVeyor build status](https://ci.appveyor.com/api/projects/status/github/news-r/greatfire?branch=master&svg=true)](https://ci.appveyor.com/project/news-r/greatfire)
+<!-- badges: end -->
+
+# greatfire
+
+Datasets of keywords and urls censored on the Chinese internet, taken from [greatfire.org](https://en.greatfire.org/)
+
+## :construction: Note
+
+Though not publicly mentioned [greatfire.org](https://en.greatfire.org/) has an API publicly available, it's not difficult to uncover. However, as I very much appreciate their project this package does not provide direct access to it and instead provides two datasets that I pledge to keep updated. If it is too outdated please open an issue.
+
+Last updated: `r Sys.time()`
+
+## Installation
+
+You can install `greatfire` from Github using via the `remotes` or `devtools` package.
+
+``` r
+# install.packages("remotes")
+remotes::install_github("news-r/greatfire")
+```
+
+## Example
+
+Both datasets are rather large and therefore not lazily loaded, you therefore have to explicitly call the `data` function.
+
+```{r}
+library(greatfire)
+
+data(censored_keywords)
+dim(censored_keywords)
+head(censored_keywords)
+
+data(censored_urls)
+dim(censored_urls)
+head(censored_urls)
+```
