@@ -32,7 +32,7 @@
 #'
 #' @name search
 #' @export
-search_url <- function(q = "github.com"){
+search_urls <- function(q = "github.com"){
   if(!exists("censored_urls"))
     stop("run `data(censored_urls)`", call. = FALSE)
   censored_urls[grepl(q, censored_urls$title), ]

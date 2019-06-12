@@ -2,11 +2,11 @@
 % Please edit documentation in R/fire.R
 \name{search}
 \alias{search}
-\alias{search_url}
+\alias{search_urls}
 \alias{search_keywords}
 \title{Search}
 \usage{
-search_url(q = "github.com")
+search_urls(q = "github.com")
 
 search_keywords(q = "winnie")
 }

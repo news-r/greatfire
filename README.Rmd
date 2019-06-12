@@ -44,10 +44,17 @@ Both datasets are rather large and therefore not lazily loaded, you therefore ha
 library(greatfire)
 
 data(censored_keywords)
-dim(censored_keywords)
+nrow(censored_keywords)
 head(censored_keywords)
 
 data(censored_urls)
-dim(censored_urls)
+nrow(censored_urls)
 head(censored_urls)
+```
+
+There are two convenience `search_*` functions to search through the data.
+
+```{r}
+gh <- search_urls("github.com") 
+knitr::kable(gh)
 ```
