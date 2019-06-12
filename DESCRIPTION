@@ -1,6 +1,6 @@
 Package: greatfire
 Title: Datasets of Keywords and Urls Censored on the Chinese Internet
-Version: 0.0.1
+Version: 0.0.2
 Authors@R: 
     person(given = "John",
            family = "Coene",
