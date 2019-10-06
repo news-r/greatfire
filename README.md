@@ -13,7 +13,7 @@ Datasets of keywords and urls censored on the Chinese internet, taken from [grea
 
 Though not publicly mentioned [greatfire.org](https://en.greatfire.org/) has an API publicly available, it's not difficult to uncover. However, as I very much appreciate their project this package does not provide direct access to it and instead provides two datasets that I pledge to keep updated. If it is too outdated please open an issue.
 
-Last updated: 2019-08-01 15:31:29
+Last updated: 2019-10-06 14:57:19
 
 Installation
 ------------
